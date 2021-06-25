@@ -1,0 +1,109 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css");
+.a-100{
+    min-height: 100vh;
+    min-width: 100vw;
+  
+}
+.h-90{
+    min-height: 90vh;
+    max-height: 90vh;
+}
+.h-1001{
+    min-height: 100vh;
+    max-height: 100vh;
+}
+.cursor1{
+    cursor: pointer;
+}
+.noborder{
+    border:none;
+}
+.paddingstart-0{
+    margin-left: 0;
+    padding-left: 0;
+}
+.user-list{
+    list-style:none;
+
+}
+.user-overflow::-webkit-scrollbar {
+    display: none;
+  }
+.pattern{
+    background-image:url("/email-pattern.png") ;
+    
+    
+
+
+}
+.margin-0{
+    padding:0;
+    margin:0;
+}
+.main-users-message{
+align-self: flex-start;
+background:rgba(16, 228, 140, 0.7);
+border:none;
+max-width: 100%;
+border-radius:0 5px 5px 5px;
+}
+.other-users-message{
+align-self: flex-end;
+background:rgba(2, 208, 235, 0.7);
+border:none;
+max-width: 100%;
+border-radius:5px 0 5px 5px;
+}
+.arrow-left {
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    border-right:10px solid rgba(16, 228, 140, 0.7);
+}
+.arrow-right {
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    border-left:10px solid rgba(2, 208, 235, 0.7);
+}
+.top-menu{
+border-radius: 0 0 0 0;
+}
+.message-list{
+    border-radius: 0 0 0 0; 
+}
+
+.spinner-main{
+    width: 10rem;
+    height: 10rem;
+}
+.disableddiv {
+    pointer-events: none;
+    opacity: 0.4;
+}
+.message-menu{
+    position: sticky;
+    bottom:0;
+    right:0;
+    left:0;
+    
+.text-field-menu{
+    background:red;
+}
+}
+
+.sidebar-items{
+    position: sticky;
+    left:0;
+    bottom:0;
+    top:0;
+}
+.top-menu-items{
+    z-index: 100;
+    position: sticky;
+    left:0;
+    top:0;
+    right:0;
+}
