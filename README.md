@@ -27,6 +27,10 @@ npm install
 ```sh
 npm run dev
 ```
+### ExpressJs server için
+```sh
+node server
+```
 <img src="https://i.ibb.co/vLFpbZX/Screenshot-1.png" alt="Screenshot-1" width="100%">
 👤 **Emin**
 
