@@ -6,7 +6,7 @@
   </a>
 </p>
 <h2>DEMO</h2>
-<h3 align="center" ><a href="src="https://chat-app-private.vercel.app">Demo</a></h3>
+<h3 align="center" ><a href="https://chat-app-private.vercel.app">Demo</a></h3>
   <br/> <br/> <br/>
 > NextJs & ExpressJs kullanarak yaptığım web chat  uygulaması
 ## Önizleme
