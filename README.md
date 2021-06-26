@@ -6,7 +6,12 @@
   </a>
 </p>
 
+
 > NextJs & ExpressJs kullanarak yaptığım web chat  uygulaması
+
+# Demo
+<h2><a href="https://chat-app-private.vercel.app/">DEMO</a></h2>
+<br/><br/><br/>
 ## Önizleme
 <img src="https://s6.gifyu.com/images/chat-gif1.gif" width="100%"><br/>
 <p align="center"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/>
