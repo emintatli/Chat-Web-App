@@ -10,7 +10,7 @@
 > NextJs & ExpressJs kullanarak yaptığım web chat  uygulaması
 
 # Demo
-<h2><a href="https://chat-app-private.vercel.app/">DEMO</a></h2>
+<a href="https://chat-app-private.vercel.app/">DEMO</a>
 <br/><br/><br/>
 ## Önizleme
 <img src="https://s6.gifyu.com/images/chat-gif1.gif" width="100%"><br/>
