@@ -5,9 +5,7 @@
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
 </p>
-<h2>DEMO</h2>
-<h3 align="center" ><a href="https://chat-app-private.vercel.app">Demo</a></h3>
-  <br/> <br/> <br/>
+
 > NextJs & ExpressJs kullanarak yaptığım web chat  uygulaması
 ## Önizleme
 <img src="https://s6.gifyu.com/images/chat-gif1.gif" width="100%"><br/>
@@ -28,10 +26,6 @@ npm install
 
 ```sh
 npm run dev
-```
-### ExpressJs server için
-```sh
-node server
 ```
 <img src="https://i.ibb.co/vLFpbZX/Screenshot-1.png" alt="Screenshot-1" width="100%">
 👤 **Emin**

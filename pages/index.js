@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { useRef,useState } from 'react'
 import CustomizedSnackbars from "../components/alert"
 import { useRouter } from 'next/router'
+import Image from 'next/image'
 export async function getServerSideProps(context){
 	const req= context.req;
 return{
@@ -17,7 +18,7 @@ export default function Home(props) {
   const kullanici_sifre=useRef();
   const [loading,SetLoading]=useState(false);
   const [durum,setDurum]=useState(<></>);
-  const buttonloading=<div class="spinner-grow spinner-grow-sm text-info" role="status"></div>
+  const buttonloading=<div className="spinner-grow spinner-grow-sm text-info" role="status"></div>
   const registerHandler=async()=>{
     if(kullanici_adi.current.value===""||kullanici_sifre.current.value===""){
       setDurum(<CustomizedSnackbars type="error" text="Boş alanları doldurunuz"/>)
@@ -51,9 +52,9 @@ export default function Home(props) {
   
 
   return (
-    <>{props.token?<meta http-equiv="refresh" content="0; URL=/chat" />:
+    <>{props.token?<meta httpEquiv="refresh" content="0; URL=/chat" />:
     <div className="d-flex flex-column justify-content-center align-items-center a-100 cursor1">
-    <img src="/back.svg" width="100px" height="100px" className="mb-2"></img>
+    <Image src="/back.svg" width="100px" height="100px" className="mb-2"/>
     {durum}
     
     <div className="card mt-2">

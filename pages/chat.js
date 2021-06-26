@@ -13,6 +13,7 @@ import { useRouter } from 'next/router'
 import Router from 'next/router'
 import PersonAddIcon from '@material-ui/icons/PersonAdd';
 import { io } from "socket.io-client";
+import Image from 'next/image'
 export async function getServerSideProps(context){
 	const req= context.req;
 return{
@@ -21,7 +22,7 @@ token:req.cookies.token||""
 }
 }
 }
-const chat=(props)=>{
+const Chat=(props)=>{
     const messagesEndRef = useRef(null)
     const mesaj_input=useRef();
     const kisi_ekle_id =useRef();
@@ -33,7 +34,7 @@ const chat=(props)=>{
     const [sideBar,setSidebar]=useState("");
     const [hedef,setHedef]=useState("");
   // SOCKET ---
-    const socket = io(":5000/");
+    const socket = io("https://radiant-tor-19923.herokuapp.com");
     const [chat,setChat]=useState([{time:0}]);
     const [incoming,setIncoming]=useState();
 
@@ -196,7 +197,7 @@ const chat=(props)=>{
                 <div className="card-body d-flex flex-column overflow-scroll user-overflow margin-0 m-1">
                
                 {sideBar!==""&&sideBar.map((value)=>{
-                    return<div id={value.from} onClick={sidebaruserOnclick}><ChatUser name={value.from} mesaj={value.mesaj} id={value.from} src="/user.png"/></div>})}
+                    return<div id={value.from} key={Math.random()} onClick={sidebaruserOnclick}><ChatUser  name={value.from} mesaj={value.mesaj} id={value.from} src="/user.png"/></div>})}
                
            
             
@@ -209,8 +210,8 @@ const chat=(props)=>{
                 </div>
                 
                 <div className="card-body d-flex flex-column message-list pattern">
-                {messageList!==""&&messageList.map((value)=><IncomingMessages user={value.type} message={value.message}/>)}
-                {!!chat&&chat.map((value)=>value.time!==0&&<IncomingMessages user={value.from===userState.username?"other":"main"}  message={value.message}/>)}
+                {messageList!==""&&messageList.map((value)=><IncomingMessages key={Math.random()} user={value.type} message={value.message}/>)}
+                {!!chat&&chat.map((value)=>value.time!==0&&<IncomingMessages key={Math.random()} user={value.from===userState.username?"other":"main"}  message={value.message}/>)}
                 
                 <br/>
              <div ref={messagesEndRef}></div>
@@ -225,14 +226,14 @@ const chat=(props)=>{
                
                 </div>
             </div>
-            </div></div>:<div className="card-body d-flex justify-content-center align-items-center"><img src="/back.svg"></img></div>}
+            </div></div>:<div className="card-body d-flex justify-content-center align-items-center"><Image width="500px" height="500px" src="/back.svg"/></div>}
             </div>
         </div>
     </div>
 :<><div className="h-1001 d-flex align-items-center justify-content-center">
 <div className="container card justify-content-center align-items-center h-90">
     <div className="card-body d-flex justify-content-center align-items-center">
-    <div class="spinner-border spinner-main" role="status">
+    <div className="spinner-border spinner-main" role="status">
         </div>
     </div>
 </div>
@@ -243,4 +244,4 @@ const chat=(props)=>{
 
 
 }
-export default chat;
+export default Chat;
